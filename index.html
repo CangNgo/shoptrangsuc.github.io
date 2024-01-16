@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/layout.css">
     <link rel="stylesheet" href="asset/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 
     <title>Serein shop trang sức</title>
 </head>
@@ -38,7 +39,7 @@
                                 <i class="fa-solid fa-user"></i>
                             </div>
                             <div class="right__icon-item">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                                <a href="cart.html" class="right__icon"><i class="fa-solid fa-cart-shopping"></i></a>
                                 <span>(0)</span>
                             </div>
                         </div>
@@ -161,8 +162,10 @@
                                     <div class="product-item-name">Vòng tay bạc</div>
                                     <div class="product-item-price"><a href="#">300.000 VNĐ</a></div>
                                 </div>
-                                <div class="buy-product">
-                                    <button name="buy_product">Mua ngay</button>
+                                <div class="buy-product" style="position: relative;">
+                                    <button name="buy_product"><a href="detail.html">Mua ngay</a></button>
+                                    <button class="buy-product-item" name="cart_product"><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-12 c-12">
                         <div class="product-item">
                             <div class="product-item-img">
                                 <img src="asset/img/nhan-vang.png" alt="Vòng tay bạc">
@@ -302,19 +305,19 @@
                 </div>
                 <div class="coutdown-olock">
                     <div class="coutdown-olock-item">
-                        <div class="coutdown-olock-item-hour">0</div>
+                        <div class="coutdown-olock-item-hour dayjs">0</div>
                         <div class="coutdown-olock-item-day">Ngày</div>
                     </div>
                     <div class="coutdown-olock-item">
-                        <div class="coutdown-olock-item-hour">7</div>
+                        <div class="coutdown-olock-item-hour hourjs">7</div>
                         <div class="coutdown-olock-item-day">Giờ</div>
                     </div>
                     <div class="coutdown-olock-item">
-                        <div class="coutdown-olock-item-hour">23</div>
+                        <div class="coutdown-olock-item-hour miniusjs">23</div>
                         <div class="coutdown-olock-item-day">Phút</div>
                     </div>
                     <div class="coutdown-olock-item">
-                        <div class="coutdown-olock-item-hour">49</div>
+                        <div class="coutdown-olock-item-hour secondjs">49</div>
                         <div class="coutdown-olock-item-day">Giây</div>
                     </div>
                 </div>
@@ -345,7 +348,7 @@
                             <i class="fa-solid fa-chevron-left"></i>
                         </div>
                         <div class="testimony-content-said">
-                            “Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis 
+                            “Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis
                             Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”
                         </div>
                         <div class="testimony-button-right">
@@ -378,14 +381,124 @@
             </div>
         </section>
         <div class="evaluate container">
-            <div class="grid wide">
+            <div class="grid wide evaluate-head">
                 <h3>Khách hàng nói về BST "Dấu ấn"</h3>
-                <div class="row">
-                    <div class="col l-4"></div>
+                <div class="row evaluatelist">
+                    <div class="col l-4 ">
+                        <div class="evaluate__box">
+                            <div class="boxevaluate__head boxevaluate__head--brown"></div>
+                            <div class="containerbox">
+                                <p class="boxevaluate__text">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                <div class="boxevaluate__user">
+                                    <div class="user__icon"><img src="asset/img/bong-tai-bac.png" alt=""></div>
+                                    <div class="user__name_time">
+                                        <div class="user__name">Lorem Ipsum</div>
+                                        <div class="user__time">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col l-4 removepadding">
+                        <div class="evaluate__box">
+                            <div class="boxevaluate__head boxevaluate__head--oceanblue"></div>
+                            <div class="containerbox">
+                                <p class="boxevaluate__text">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                <div class="boxevaluate__user">
+                                    <div class="user__icon"><img src="asset/img/bong-tai-bac.png" alt=""></div>
+                                    <div class="user__name_time">
+                                        <div class="user__name">Lorem Ipsum</div>
+                                        <div class="user__time">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col l-4 removepadding">
+                        <div class="evaluate__box">
+                            <div class="boxevaluate__head  boxevaluate__head--darkblue"></div>
+                            <div class="containerbox">
+                                <p class="boxevaluate__text">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                <div class="boxevaluate__user">
+                                    <div class="user__icon"><img src="asset/img/bong-tai-bac.png" alt=""></div>
+                                    <div class="user__name_time">
+                                        <div class="user__name">Lorem Ipsum</div>
+                                        <div class="user__time">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <footer class="container footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4">
+                        <p class="footer__ministore">MiniStore.</p>
+                        <p class="text">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa
+                            volutpat aenean odio erat nullam fringilla.</p>
+                    </div>
+                    <div class="col l-2">
+                        <P class="footer__box">QUICK LINKS</P>
+                        <ul class="list-item">
+                            <li>Home</li>
+                            <li>ABOUT</li>
+                            <li>SHOP</li>
+                            <li>BLOGS</li>
+                            <li>CONTACT</li>
+                        </ul>
+                    </div>
+                    <div class="col l-3">
+                        <p class="footer__box">Help & info</p>
+                        <ul class="list-item">
+                            <li>Track Your Order </li>
+                            <li>Returns policies</li>
+                            <li>Shipping + Delivery </li>
+                            <li>Contact Us </li>
+                            <li>Faqs</li>
+                        </ul>
+                    </div>
+                    <div class="col l-3">
+                        <p class="footer__box">Help & info</p>
+                        <ul class="list-item ">
+                            <li class="contact-opacity">Do you have any queries or suggestions? </li>
+                            <li><strong style="text-decoration: underline;">yourinfo@gmail.com</strong></li>
+                            <li class="contact-opacity">If you need support? Just give us a call.</li>
+                            <li><strong style="text-decoration: underline;">+55 111 222 333 44</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 
 </html>
+
+<script src="javascript.js">
+    function oclick() {
+        var oclock = new Date();
+        document.querySelector(".coutdown-olock .dayjs").innerHTML = oclock.getDay();
+        document.querySelector(".coutdown-olock .hourjs").innerHTML =
+            oclock.getHours();
+        document.querySelector(".coutdown-olock .miniusjs").innerHTML =
+            oclock.getMinutes();
+        document.querySelector(".coutdown-olock .secondjs").innerHTML =
+            oclock.getSeconds();
+    }
+    setInterval(oclick, 1000);
+</script>

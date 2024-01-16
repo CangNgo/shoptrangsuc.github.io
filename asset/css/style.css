@@ -124,7 +124,12 @@ header {
 
 .right__icon-item i {
     font-size: 18px;
+    color: var(--main-color);
+}
 
+
+.right__icon-item .right__icon-color {
+    color: var(--main-color);
 }
 
 .right__icon-item>span {
@@ -383,7 +388,7 @@ header {
     margin-top: 20px;
 }
 
-.buy-product > button {
+.buy-product>button {
     cursor: pointer;
     padding: 12px 28px;
     justify-content: center;
@@ -400,10 +405,18 @@ header {
     transition: all .3s linear;
 }
 
-.buy-product > button:hover {
+.buy-product .buy-product-item {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    padding: 12px 14px;
+    border-radius: 0 4px 4px 0;
+}
+
+.buy-product>button:hover {
     background-color: var(--white-color);
     color: var(--main-new);
-    border: 1px solid var(--main-new);
+    /* border: 1px solid var(--main-new); */
 }
 
 .posts-item {
@@ -464,7 +477,7 @@ header {
 .coutdown-content h3 {
     text-align: center;
     color: var(--background);
-    font-size: 4.9rem;
+    font-size: 4.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
@@ -485,7 +498,6 @@ header {
 
 .coutdown-content-bottom button {
     display: inline-block;
-    float: right;
     color: var(--background);
     font-size: 3.2rem;
     font-style: normal;
@@ -790,4 +802,148 @@ header {
 
 .form-main {
     width: 700px;
+}
+
+/*footer*/
+/* evaluate */
+.evaluate .evaluatelist {
+    margin-top: 100px;
+}
+
+
+
+.evaluate .evaluate__box {
+    height: 240px;
+    background-color: #676A66;
+    border-radius: 8px;
+}
+
+.evaluate__box+.evaluate__box {
+    margin-left: 20px;
+}
+
+.evaluate .evaluate-head>h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.evaluate .containerbox {
+    padding: 18px 18px;
+}
+
+.evaluate .evaluate__box .boxevaluate__head {
+    width: 258px;
+    height: 32px;
+    font-size: 18px;
+
+    border-radius: 8px 0 50px 0;
+}
+
+.evaluate .boxevaluate__head--brown {
+    background-color: #B59585;
+}
+
+.evaluate .boxevaluate__head--oceanblue {
+    background-color: #19A7CE;
+}
+
+.evaluate .boxevaluate__head--darkblue {
+    background-color: #00235B;
+}
+
+.evaluate .evaluate__box .boxevaluate__text {
+    font-size: 18px;
+    font-weight: 550;
+    color: #D8E2D2;
+    margin-bottom: 1rem;
+}
+
+.evaluate .boxevaluate__user {
+    display: flex;
+}
+
+.evaluate .user__icon {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.evaluate .user__icon img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #DEAF54;
+}
+
+.evaluate .user__name_time {
+    display: inline-block;
+}
+
+.evaluate .user__name_time .user__name {
+    font-size: 24px;
+    font-weight: 550;
+    color: #fff;
+}
+
+.evaluate .user__name_time .user__time {
+    font-size: 18px;
+    font-weight: 550;
+    color: #D8E2D2;
+}
+
+/* end evaluate */
+
+/* footer  */
+.footer .footer__ministore {
+    font-size: 33px;
+
+}
+
+.footer .text {
+    font-size: 16px;
+    width: 339px;
+}
+
+.footer .footer__box {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.footer .list-item {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.footer .list-item li+li {
+    margin-top: 8px;
+}
+
+.footer .contact-opacity {
+    opacity: 0.6;
+    text-transform: none;
+
+}
+
+.footer .list-item {
+    justify-content: space-between;
+}
+
+
+/* end footer */
+
+/* cart */
+.totalprice .btn__pay {
+    width: 100%;
+    height: 52px;
+    border-radius: 8px;
+    background: var(--main-color);
+
+    margin-top: 20px;
+}
+
+.totalprice .btn__pay a {
+    color: #fff;
+    font-size: 18px;
 }
